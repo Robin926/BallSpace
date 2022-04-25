@@ -34,7 +34,7 @@
        }
        .stars{
          border: 1px solid white;
-       }
+       }    
        /* 主選單------------------------------------------------------------- */
       .topcontainer{
         background-image: linear-gradient(180deg,rgb(27, 27, 27)20%,rgba(36, 67, 153, 0.11)100%);
@@ -94,10 +94,97 @@
         margin: 5px;
        }
        /* ---------------------------------------- */
-       .cardbox{
-         display: flex;
-         justify-content: space-between;
-       }
+       .titlegwrap{
+          margin-top: 2%;
+          position: relative;
+        }
+        .titlegwrap img{
+          display: block;
+          margin: auto;
+        }
+        .titlegwrap .unboxingtitle{
+          color: #FFF;
+          font-size: 30px;
+          letter-spacing: 5px;
+          position: absolute;
+          left: 180px;
+          top: 10px;
+        }
+        /* --------------------------------------------------- */
+        .unboxwrap h3{
+         color: white;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 20px;
+        padding-top:10%;
+        }
+        .unboxwrap ul{
+          display: flex;
+          justify-content: center;
+          margin-top: 5%;
+         }
+        .unboxwrap ul li{
+          box-sizing: border-box;
+          width: 300px;
+          height: 400px;
+          margin: 10px;
+          line-height: 20px;
+          color: rgb(157, 188, 189);
+          background: rgba(121, 155, 156, 0.2);
+          border-top: 1px solid rgba(26, 247, 236, 0.664);
+          border-left: 1px solid rgb(26, 247, 236, 0.664);
+          border-bottom: 1px solid rgb(26, 247, 236, 0.664);
+          border-right: 1px solid rgb(26, 247, 236, 0.664);;
+          box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+          border-top-left-radius: 8%;
+          border-top-right-radius: 8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 8%;
+          padding: 0.5%;
+        }
+        .unboximg{
+          width: 300px;
+          height: 200px;
+          overflow: hidden;
+          border-top-left-radius: 8%;
+          border-top-right-radius:8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 10%;
+        }
+        .unboxwrap h2{
+          text-align: center;
+        }
+        .unboxwrap h2 a{
+          color: #FFF;
+          text-decoration: none;
+        }
+        .unboxwrap h2 a:hover{
+          color: aqua;
+        }
+        .unboxwrap span{
+          line-height: 50px;
+        }
+        .unboxwrap .unboximg{
+          width: 100%;
+        }
+        /* ---------------------------------------------------- */
+        .footerwrap{
+          width: 100%;
+          background-image: linear-gradient(360deg,rgb(27, 27, 27)20%,rgba(36, 67, 153, 0.11)100%);
+          width: 100%;
+          height: 120px;
+          text-align: center;
+          line-height: 30px;
+          margin-bottom: 0%;
+          margin-top: 2%;
+        }
+        .footerwrap h4{
+          color: #FFF;
+        }
+        .footerwrap p {
+          color:#FFF;
+          font-size: 10px;
+        }
        
     </style>
 </head>
@@ -108,38 +195,135 @@
     <div class="topcontainer">
       <div class="navbar">
         <div class="logo">
-          <h1><a href=""><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
+          <h1><a href="./index.html"><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
         </div>
         <nav class="mainmenu">
            <ul>
-             <li><a href="">球場搜尋</a></li>
-             <li><a href="">最新消息</a></li>
-             <li><a href="">開箱論壇</a></li>
-             <li><a href="">訓練課程</a></li>
+            <li><a href="./01.html">球場搜尋</a></li>
+            <li><a href="./02.html">最新消息</a></li>
+            <li><a href="./03.html">開箱論壇</a></li>
+            <li><a href="./04.html">訓練課程</a></li>
            </ul>
         </nav>
         <nav class="mainicon">
            <ul>
              <li><a href=""><img src="./ballspacephoto/write icon.png" alt=""></a></li>
-             <li><a href=""><img src="./ballspacephoto/shopping icon.png" alt=""></a></li>
              <li><a href=""><img src="./ballspacephoto/people icon.png" alt=""></a></li>
            </ul>
         </nav>
       </div>
     </div>
 <!-- -------------------------------------------------------------- -->
-  <div class="cardbox">
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/puma.jpg" alt=""></div>
-      <h2>title</h2>
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/asics.jpg" alt=""></div>
-      <h2>title</h2>
+  <div class="titlegwrap">
+    <img src="./ballspacephoto/menucard.png" alt="">
+    <div class="unboxingtitle">
+      <h1>
+        開箱論壇
+      </h1>
     </div>
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/curry.jpg" alt=""></div>
-      <h2>title</h2>
+  </div>
+  <div class="unboxwrap">
+    <ul>
+      <li> 
+        <div class="unboximg">
+          <img  src="./ballspacephoto/puma.jpg" alt="">
+        </div>
+        <h2><a href="">PUMA MB.01 ‘Queen City’</a></h2>
+        <span>作者:Allen</span>
+        <p>
+          以夏洛特別稱 Queen City 命名，回應效力城市的信任與支持，並用新球場刺青圖案約定未來。 NITRO Foam 獻給科技派，圓潤鞋型延續籃球線一貫復古魂設計。 史上第四年輕入選全明星賽，穿著…
+        </p>
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/asics.jpg" alt="">
+        </div>
+        <h2><a href="">ASICS NOVA SURGE 2</a></h2>
+        <span>作者:Witness</span>
+        <p>
+          這一回可不能錯過吧！ASICS 旗艦籃球鞋款 NOVA SURGE 2 要來送大家試試看了！這一次更威的，就是一組送三雙！匯集你的隊友們，在球場上一起麻吉穿上一樣的鞋款，享受 NOVA SURGE 2 帶來強大的機能與保護！…
+        </p>
+
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/curry.jpg" alt="">
+        </div>
+        <h2><a href="">Curry Flow 9 ‘Dribble Me Elmo’</a></h2>
+        <span>作者:Chou</span>
+        <p>
+          不只體現芝麻街角色個性特徵，還讓配色變得有深度引人去思考。 命名致敬 Tickle Me Elmo 玩具爆紅故事，也帶出 Stephen Curry 的籃球風格。Curry Flow 9 x 芝麻街系列進入最後倒數，就像在收集玩具玩偶般一個個湊齊七位角…
+        </p>
+
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/asics2.jpg" alt="">
+        </div>
+        <h2><a href="">ASICS GELBURST 25 LOW</a></h2>
+        <span>作者:Witness</span>
+        <p>
+          ASICS 近年持續深耕台灣籃球市場，推出多款經典兼具高人氣籃球鞋型，於 2021 年末再推出 GELBURST 25 LOW 低筒鞋款，延續 GELBURST…
+        </p>
+      </li>
+    </ul>
+     <ul>
+      <li> 
+        <div class="unboximg">
+          <img  src="./ballspacephoto/freak.jpg" alt="">
+        </div>
+        <h2><a href="">Nike Zoom Freak 3</a></h2>
+        <span>作者:Allen</span>
+        <p>
+          相信各位朋友們如果有看過實鞋，都知道鞋面整體相當輕薄啊，但實際穿上個人認為整體包覆是相當蘇胡啊。
+          後跟的腳踝填充舒適，在繫上那鞋帶後，個人認為整體包覆是相當舒適嘟嘟豪的啊， 想當初在鞋店同時試穿Freak 3跟.....
+        </p>
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/kd15.jpg" alt="">
+        </div>
+        <h2><a href=""> Nike KD 15 </a></h2>
+        <span>作者:Witness</span>
+        <p>
+          以及延續前兩代的設計語言，幾乎可確定這雙將會是最新的 Nike KD 15。繼上回深藍/黑配色之後，這幾天又連續曝光兩款配色，分別是螢光黃與白黑色。除了上回發現的「面料紋理就有延續......
+        </p>
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/gt cut.jpg" alt="">
+        </div>
+        <h2><a href="">Curry Flow 9 ‘Dribble Me Elmo’</a></h2>
+        <span>作者:Chou</span>
+        <p>
+          前言：這雙被某些中國人說是“實戰天花板”的球鞋，一直以來備受爭議，尤其是關於“拖沓”很多人都表示不同的意見。這個配置從來沒出現過，讓人覺得nike終於出點新的東西了.....
+        </p>
+
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/pg6.jpg" alt="">
+        </div>
+        <h2><a href="">Nike PG 6</a></h2>
+        <span>作者:Witness</span>
+        <p>
+          抓地力很優秀，在做急停或是煞停時不太會有緩衝空間。鞋底紋路較粗，不太會黏灰塵，也不需要擦拭鞋底維持抓地力！但由於鞋底材質偏硬，導致沒辦法根據不同的煞停方向做出對應的調整，所以當急停力道超過一定的臨界值時......
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="footerwrap">
+    <div class="footericon">
+      <img src="./ballspacephoto/footericon1.jpg" alt="">
+      <img src="./ballspacephoto/footericon2.jpg" alt="">
+      <img src="./ballspacephoto/footericon3.jpg" alt="">
     </div>
+    <h4>2022 © BallSpace Copyright All Rights Reserved</h4>
+    <p>
+      本網站為緯育TibaMe前端設計工程師班第75期學員專題作品， 本平台僅供學習、展示之用。
+      若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。</p>
+  </div>
+
 </div>
 </body>
 </html>

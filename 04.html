@@ -134,7 +134,101 @@
           text-align: center;
           padding-top: 20px;
         }
+        /* -------------------------------------------------- */
+        .trainwrap{
+          margin-top: 2%;
+          position: relative;
+        }
+        .trainwrap img{
+          display: block;
+          margin: auto;
+        }
+        .trainwrap .traintitle{
+          color: #FFF;
+          font-size: 30px;
+          letter-spacing: 5px;
+          position: absolute;
+          left: 180px;
+          top: 10px;
+        }
+        .trainbox{
+          display: flex;
+          justify-content: center;
+        }
+        .trainbox .trainitem{
+          display: block;
+          margin: 10px;
+        }
+        .trainbox .trainitem{
+          position: relative;
+        }
+        .trainbox .content{
+          position: absolute;
+          display: flex;
+          justify-content: space-between;
+          top: 220px;
+          left: 20px;
+        }
+        .trainbox h2{
+          font-size: 20px;
+          color: #FFF;
+          line-height: 30px;
 
+        }
+        .trainbox .seemore{
+          position: absolute;
+          left: 450px;
+          top: 260px;
+          text-decoration: none;
+        }
+        .trainbox a{
+          width: 100px;
+          height: 30px;
+          text-decoration: none;
+          color: #FFF;
+          font-size: 20px;
+          background-color: aqua;
+          border-top-left-radius: 8%;
+          border-top-right-radius: 8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 8%;
+          padding: 5px;
+        }
+        .trainbox .seemore :hover{
+          color:aqua;
+          background-color: #FFF;
+          box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+        .trainbox .trainitem{
+          width: 600px;
+          height: 300px;
+          overflow: hidden;
+        }
+        .trainbox .trainitem  :hover{
+          transform: scale(1.2,1.2);
+          transition: 1s;  
+        }
+        /* -------------------------------------- */
+        .footerwrap{
+          width: 100%;
+          background-image: linear-gradient(360deg,rgb(27, 27, 27)20%,rgba(36, 67, 153, 0.11)100%);
+          width: 100%;
+          height: 120px;
+          text-align: center;
+          line-height: 30px;
+          margin-bottom: 0%;
+          margin-top: 2%;
+        }
+        .footerwrap h4{
+          color: #FFF;
+        }
+        .footerwrap p {
+          color:#FFF;
+          font-size: 10px;
+        }
+        
+        
+        
 
     </style>
 </head>
@@ -145,62 +239,89 @@
     <div class="topcontainer">
       <div class="navbar">
         <div class="logo">
-          <h1><a href="首頁ballspace.html"><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
+          <h1><a href="./index.html"><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
         </div>
         <nav class="mainmenu">
            <ul>
-             <li><a href="">球場搜尋</a></li>
-             <li><a href="">最新消息</a></li>
-             <li><a href="">開箱論壇</a></li>
-             <li><a href="訓練課程.html">訓練課程</a></li>
+            <li><a href="./01.html">球場搜尋</a></li>
+            <li><a href="./02.html">最新消息</a></li>
+            <li><a href="./03.html">開箱論壇</a></li>
+            <li><a href="./04.html">訓練課程</a></li>
            </ul>
         </nav>
         <nav class="mainicon">
            <ul>
              <li><a href=""><img src="./ballspacephoto/write icon.png" alt=""></a></li>
-             <li><a href=""><img src="./ballspacephoto/shopping icon.png" alt=""></a></li>
              <li><a href=""><img src="./ballspacephoto/people icon.png" alt=""></a></li>
            </ul>
         </nav>
       </div>
     </div>
 <!-- -------------------------------------------------------------- -->
-  <div class="topbox">
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power1.jpg" alt=""></div>
-      <h1>動態熱身訓練</h1>
-      <p>透過動態熱身訓練學員的敏捷性、協調性、力量以及專注度。</p>
-    </div>
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power2.jpg" alt=""></div>
-      <h1>分站訓練</h1>
-      <p>共分三站每一站 15 分鐘的訓練，安排投籃、傳球、運球、切入等動作技巧。</p>
-    </div>
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power3.jpg" alt=""></div>
-      <h1>實戰對抗</h1>
-      <p>給予教練時間教導球員簡單的五人跑位，並增加五對五比賽經驗。</p>
-    </div>
+  <div class="trainwrap">
+      <img src="./ballspacephoto/menucard.png" alt="">
+      <div class="traintitle">
+        <h1>
+          訓練課程
+        </h1>
+      </div>
   </div>
-  <div class="bottombox">
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power4.jpg" alt=""></div>
-      <h1>靜態伸展</h1>
-      <p>專業防護員傳遞正確的防護知識，並在最後帶領球員進行放鬆伸展，降低疲勞以及受傷機率。</p>
-    </div>
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power5.jpg" alt=""></div>
-      <h1>肌力訓練</h1>
-      <p>透過肌力訓練鍛鍊身體每一個部位的功能與穩定性，使身體的運動能力更加卓越。面對高強度運動，有效避免運動傷害的發生。</p>
-    </div>
-    <div class="card">
-      <div div class="img"><img src="./ballspacephoto/power6.jpg" alt=""></div>
-      <h1>觀念建立</h1>
-      <p>從個人到團隊、從進攻到防守，在訓練環節中建立學員正確的籃球觀念。</p>
-    </div>
+    
+  <div class="trainbox">
+      <div class="trainitem">
+        <img src="./ballspacephoto/train1.jpg" alt="">
+        <div class="content">
+          <h2>
+            9-15歲<br>
+            少年籃球訓練營<br>
+          </h2>
+        </div>
+        <div class="seemore"><a href="">了解更多</a></div>
+      </div>
+      <div class="trainitem">
+        <img src="./ballspacephoto/train2.jpg" alt="">
+        <div class="content">
+          <h2>
+            16-22歲<br>
+            青年籃球訓練<br>
+          </h2>
+        </div>
+        <div class="seemore"><a href="">了解更多</a></div>
+      </div>
   </div>
-  <footer>
-    <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
-  </footer>
+  <div class="trainbox">
+      <div class="trainitem">
+        <img src="./ballspacephoto/train3.jpg" alt="">
+        <div class="content">
+          <h2>
+            13歲以上<br>
+            女生專屬籃球訓練<br>
+          </h2>
+        </div>
+        <div class="seemore"><a href="">了解更多</a></div>
+      </div>
+      <div class="trainitem">
+        <img src="./ballspacephoto/train4.jpg" alt="">
+        <div class="content">
+          <h2>
+            4-8歲<br>
+            幼兒籃球體適能<br>
+          </h2>
+        </div>
+        <div class="seemore"><a href="">了解更多</a></div>
+      </div>
+  </div>
+  <div class="footerwrap">
+    <div class="footericon">
+      <img src="./ballspacephoto/footericon1.jpg" alt="">
+      <img src="./ballspacephoto/footericon2.jpg" alt="">
+      <img src="./ballspacephoto/footericon3.jpg" alt="">
+    </div>
+    <h4>2022 © BallSpace Copyright All Rights Reserved</h4>
+    <p>
+      本網站為緯育TibaMe前端設計工程師班第75期學員專題作品， 本平台僅供學習、展示之用。
+      若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。</p>
+  </div>
+ 
 </body>
 </html>

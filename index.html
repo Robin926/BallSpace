@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballspace</title>
     <link rel="stylesheet" href="reset.css">
+   
     <style>
       html{
             height: 100%;
@@ -38,7 +39,6 @@
 /* 主選單------------------------------------------------------------- */
       .topcontainer{
         background-image: linear-gradient(180deg,rgb(27, 27, 27)20%,rgba(36, 67, 153, 0.11)100%);
-        height: 150px;
         width: 100%;
         height: 180px;
         top: 0%;
@@ -95,7 +95,8 @@
 /* 場地搜尋--------------------------------------------- */
       .coursesearch{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        margin: 20px;
         margin-top: 30px;
       }
       .indoorbox{
@@ -111,6 +112,7 @@
         border-bottom-right-radius: 8%;
       }
       .indoorbox .indoor img{
+        display: block;
         width: 100%;
         height: 100%;
         border-top-left-radius: 8%;
@@ -138,6 +140,7 @@
         color:rgb(221, 224, 226);
       }
       .taiwanmap img{
+        display: block;
         height: 600px;
         margin-top: 20%;
       }
@@ -154,6 +157,7 @@
         border-bottom-right-radius: 8%;
       }
       .outdoorbox .outdoor img{
+        display: block;
         width: 100%;
         height: 100%;
         border-top-left-radius: 8%;
@@ -205,7 +209,7 @@
       }
       /* 最新消息--------------------------------------- */
       .news{
-        margin-top: 30px;
+        margin-top:5%;
         position: relative;
       }
       .news h3{
@@ -214,13 +218,15 @@
         font-size: 30px;
         letter-spacing: 20px;
         }
+        .news .newsbox{
+          margin-top:5%;
+        }
         .news .newsbox .newspicture{
           background-color: antiquewhite;
           display: flex;  
         }
         .news .newsbox .newspicture img{
           display: flex;
-          height: 100%;
           width: 100%;
         }
         .news .newsbox .newscontent{
@@ -241,126 +247,191 @@
           margin-top: 50px;
           line-height: 50px;
          }
- /* ------------------------------------------------------------------        */
-        .menucard{
-          position: relative;
-          text-align: center;
-          justify-content: space-between;
-          margin-top: 100px;
-        }
-        .menucard h3{
-          position: absolute;
-          top: 10px;
-          left: 171px;
-          color: white;
-          text-align: center;
-          font-size: 30px;
-          letter-spacing: 20px;
-        }
-        .forum{
-          display: flex;
-          margin: 50px;
-          justify-content:space-between;
-        }
-        .forum .col .photo{
-          width: 250px;
-          height: 200px;
-          border-top-left-radius: 8%;
-          border-top-right-radius: 8% ;
-          border-bottom-left-radius: 8%;
-          border-bottom-right-radius: 8%;
-        }
-        .forum .col .photo img{
-          width: 100%;
-          height: 100%;
-          border-top-left-radius: 8%;
-          border-top-right-radius: 8% ;
-          border-bottom-left-radius: 8%;
-          border-bottom-right-radius: 8%;
-        }
-        .forum .col h2 {
-          color: white;
-          text-align: center;
-          margin-top: 20px;
-        }
-/* --------------------------------------------------- */
-        .training{
-          position: relative;
-          text-align: center;
-          justify-content: space-between;
-          margin-top: 100px;
-        }
-        .training h3{
-          position: absolute;
-          top: 10px;
-          left: 171px;
-          color: white;
-          text-align: center;
-          font-size: 30px;
-          letter-spacing: 20px;
-        }
-        .box{
-         display: flex;
-         margin-top: 20px;
-        }
-        .card{
-            width: 250px;
-            height: 300px;
-            margin-top: 20px;
-            margin: auto;
-            box-sizing: border-box;
-        }
-        .card img{
-            width: 100%;
-        }
-        .card h1{
-          color: aqua;
+         .news .seemore{
+           text-align: right;
+           margin-right: 20px;
+           margin-top: 1%;
+         }
+         .news .seemore a{
+          background-color: aqua;
+          color: black;
+          line-height: 60px;
           font-size: 20px;
-          margin-top: 10px;
-          margin-bottom: 10px;
+          text-decoration: none;
+          border-top-left-radius: 8%;
+          border-top-right-radius: 8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 8%;
+          border:1px solid rgba(67, 215, 224, 1) ;
+          padding: 1%;  
+        }
+        .news .seemore :hover{
+          color: #FFF;}
+ /* -開箱論壇--------------------------------------------------------
+         */
+        .unboxwrap h3{
+         color: white;
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 20px;
+        padding-top:10%;
+        }
+        .unboxwrap ul{
+          display: flex;
+          margin-top: 5%;
+         }
+        .unboxwrap ul li{
+          width: 300px;
+          height: 400px;
+          margin: auto;
+          line-height: 20px;
+          color: rgb(157, 188, 189);
+          background: rgba(121, 155, 156, 0.2);
+          border-top: 1px solid rgba(26, 247, 236, 0.664);
+          border-left: 1px solid rgb(26, 247, 236, 0.664);
+          box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);;
+          border-top-left-radius: 8%;
+          border-top-right-radius: 8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 8%;
+          padding: 0.5%;
+        }
+        .unboximg{
+          width: 300px;
+          height: 200px;
+          overflow: hidden;
+          border-top-left-radius: 8%;
+          border-top-right-radius:8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 10%;
+        }
+        .unboxwrap h2{
           text-align: center;
         }
-        .card p{
-          color: rgb(155, 156, 156);
-          line-height: 25px;
+        .unboxwrap h2 a{
+          color: #FFF;
+          text-decoration: none;
         }
-/* --------------------------------------------------------------     */
-        .aboutbox .about {
+        .unboxwrap h2 a:hover{
+          color: aqua;
+        }
+        .unboxwrap span{
+          line-height: 50px;
+        }
+        .unboxwrap .unboximg{
+          width: 100%;
+        }
+        .unboxwrap .seemore{
           text-align: center;
+          margin: 1%;
+        }
+        .unboxwrap .seemore a{
+          background-color: aqua;
+          color: black;
+          line-height: 60px;
+          font-size: 20px;
+          text-decoration: none;
+          border-top-left-radius: 8%;
+          border-top-right-radius: 8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 8%;
+          border:1px solid rgba(67, 215, 224, 1) ;
+          padding: 1%;  
+   
+        }
+        .unboxwrap .seemore :hover{
+          color: #FFF;}
+      /* --訓練課程------------------ */
+        .trainwrap{
+          margin-top: 5%;
+        }
+        .trainimg{
+          display: flex;
+          justify-content: center;
+        }
+        .trainimg img{
+          width: 100%;
           position: relative;
-          z-index: -30px;
         }
-        .aboutbox .about h3{
-          font-size: 30px;
+        .trainbox{
+          position: absolute;
+          margin-top: 10%;
+        }
+        .trainbox h3{
+          color: white;
+          text-align: center;
+          font-size: 50px;
           letter-spacing: 20px;
-          color: white;
-          position: absolute;
-          top: 200px;
-          left: 650px;
+          margin-bottom: 30px;
         }
-        .aboutbox .about p{
+        .trainbox p{
           color: white;
-          position: absolute;
-          letter-spacing: 12px;
-          top: 330px;
-          left: 500px;
+          font-size: 20px;
+          letter-spacing: 5px;
           line-height: 30px;
         }
-        /* ------------------------------------------------------- */
-        footer{
+        .trainbox .seemore a{
+          background-color: aqua;
+          color: black;
+          line-height: 60px;
+          font-size: 20px;
+          text-decoration: none;
+          border-top-left-radius: 8%;
+          border-top-right-radius: 8% ;
+          border-bottom-left-radius: 8%;
+          border-bottom-right-radius: 8%;
+          border:1px solid rgba(67, 215, 224, 1) ;
+          padding: 1%;  
+        }
+        .trainbox .seemore :hover{
+          color: #FFF;
+        }
+        /* ------關於我們------------------------------ */
+        .aboutwrap{
+          margin-top: 1%;
+          margin-bottom: 1%;
+        }
+        .aboutwrap .aboutimg{
+          display: flex;
+          justify-content: center;
+        }
+        .aboutwrap img{
+          position: relative;
+        }
+        .aboutwrap .aboutbox{
+          position: absolute;
+          margin-top: 10%;
+        }
+        .aboutwrap .aboutbox h3{
+          color: white;
+          text-align: center;
+          font-size: 30px;
+          letter-spacing: 20px;
+          margin-bottom: 30px;
+        }
+        .aboutwrap .aboutbox p{
+          color: white;
+          font-size: 20px;
+          letter-spacing: 5px;
+          line-height: 30px;
+        }
+/* ------footer------------------------- */
+        .footerwrap{
+          width: 100%;
           background-image: linear-gradient(360deg,rgb(27, 27, 27)20%,rgba(36, 67, 153, 0.11)100%);
           width: 100%;
-          height: 70px;
-        }
-        footer p{
-          color: rgb(232, 233, 233);
-          font-size: 5px;
+          height: 120px;
           text-align: center;
-          padding-top: 20px;
+          line-height: 30px;
+          margin-bottom: 0%;
         }
-        
-        
-        
+        .footerwrap h4{
+          color: #FFF;
+        }
+        .footerwrap p {
+          color:#FFF;
+          font-size: 10px;
+        }
       
  
     </style>
@@ -372,20 +443,19 @@
   <div class="topcontainer">
     <div class="navbar">
       <div class="logo">
-        <h1><a href="首頁ballspace.html"><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
+        <h1><a href="./index.html"><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
       </div>
       <nav class="mainmenu">
          <ul>
-           <li><a href="">球場搜尋</a></li>
-           <li><a href="">最新消息</a></li>
-           <li><a href="">開箱論壇</a></li>
-           <li><a href="訓練課程.html">訓練課程</a></li>
+           <li><a href="./01.html">球場搜尋</a></li>
+           <li><a href="./02.html">最新消息</a></li>
+           <li><a href="./03.html">開箱論壇</a></li>
+           <li><a href="./04.html">訓練課程</a></li>
          </ul>
       </nav>
       <nav class="mainicon">
          <ul>
            <li><a href=""><img src="./ballspacephoto/write icon.png" alt=""></a></li>
-           <li><a href=""><img src="./ballspacephoto/shopping icon.png" alt=""></a></li>
            <li><a href=""><img src="./ballspacephoto/people icon.png" alt=""></a></li>
          </ul>
       </nav>
@@ -462,83 +532,104 @@
                   </p>
               </div>
         </div>
+        <div class="seemore"><a href="./02.html">了解更多</a></div>
   </div>
 <!-- 開箱論壇--------------------------------------------- -->
-  <div class="forumbox">
-    <div class="menucard">
-      <img src="./ballspacephoto/menucard.png" alt="">
-      <h3>開箱論壇</h3>
-    </div>
-    <div class="forum">
-        <div class="col">
-          <div class="photo">
-            <a href=""><img src="./ballspacephoto/puma.jpg" alt=""></a>
-          </div>
-          <h2> PUMA MB.01</h2>
-        </div>  
-        <div class="col">
-          <div class="photo">
-            <a href=""><img src="./ballspacephoto/curry.jpg" alt=""></a>
-          </div>
-          <h2>Curry Flow 9 ‘Dribble Me Elmo’</h2>
-        </div> 
-        <div class="col">
-          <div class="photo">
-              <a href=""><img src="./ballspacephoto/li-ning.jpg" alt=""></a>
-          </div>
-          <h2>Li-Ning 李寧馭帥 15 Low</h2>
-        </div> 
-        <div class="col">
-          <div class="photo">
-              <a href=""><img src="./ballspacephoto/asics.jpg" alt="" srcset=""></a>
-          </div>
-          <h2>NOVA SURGE 2 </h2>
-        </div> 
-        <div class="col">
-          <div class="photo">
-              <a href=""><img src="./ballspacephoto/asics2.jpg" alt=""></a>
-          </div>
-          <h2>ASICS UNPRE ARS </h2>
-        </div> 
-    </div>
-  </div>
-<!-- 訓練課程------------------------ -->
-<div class="training">
-  <img src="./ballspacephoto/menucard.png" alt="">
-  <h3>訓練課程</h3>
-  <div class="box">
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power1.jpg" alt=""></div>
-      <h1>動態熱身訓練</h1>
-      <p>透過動態熱身訓練學員的敏捷性、協調性、力量以及專注度。</p>
-    </div>
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power2.jpg" alt=""></div>
-      <h1>分站訓練</h1>
-      <p>共分三站每一站 15 分鐘的訓練，安排投籃、傳球、運球、切入等動作技巧。</p>
-    </div>
-    <div class="card">
-      <div class="img"><img src="./ballspacephoto/power3.jpg" alt=""></div>
-      <h1>實戰對抗</h1>
-      <p>給予教練時間教導球員簡單的五人跑位，並增加五對五比賽經驗。</p>
-    </div>
-  </div>
-</div>
-<!-- 關於我們---------------------------------------------------------- -->
-<div class="aboutbox">
-  <div class="about">
-    <img src="./ballspacephoto/aboutcard.png" alt="">
-        <h3>關於我們</h3>
+  <div class="unboxwrap">
+    <h3>開箱論壇</h3>
+    <ul>
+      <li> 
+        <div class="unboximg">
+          <img  src="./ballspacephoto/puma.jpg" alt="">
+        </div>
+        <h2><a href="">PUMA MB.01 ‘Queen City’</a></h2>
+        <span>作者:Allen</span>
         <p>
-          籃球跟是我們的語言，是我們的連結的方式<br>
-          一起打球吧，穿上喜歡的球鞋<br>
-          前往自己的"BallSpace"<br>
+          以夏洛特別稱 Queen City 命名，回應效力城市的信任與支持，並用新球場刺青圖案約定未來。 NITRO Foam 獻給科技派，圓潤鞋型延續籃球線一貫復古魂設計。 史上第四年輕入選全明星賽，穿著…
         </p>
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/asics.jpg" alt="">
+        </div>
+        <h2><a href="">ASICS NOVA SURGE 2</a></h2>
+        <span>作者:Witness</span>
+        <p>
+          這一回可不能錯過吧！ASICS 旗艦籃球鞋款 NOVA SURGE 2 要來送大家試試看了！這一次更威的，就是一組送三雙！匯集你的隊友們，在球場上一起麻吉穿上一樣的鞋款，享受 NOVA SURGE 2 帶來強大的機能與保護！…
+        </p>
+
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/curry.jpg" alt="">
+        </div>
+        <h2><a href="">Curry Flow 9 ‘Dribble Me Elmo’</a></h2>
+        <span>作者:Chou</span>
+        <p>
+          不只體現芝麻街角色個性特徵，還讓配色變得有深度引人去思考。 命名致敬 Tickle Me Elmo 玩具爆紅故事，也帶出 Stephen Curry 的籃球風格。Curry Flow 9 x 芝麻街系列進入最後倒數，就像在收集玩具玩偶般一個個湊齊七位角…
+        </p>
+
+      </li>
+      <li>
+        <div class="unboximg">
+          <img src="./ballspacephoto/asics2.jpg" alt="">
+        </div>
+        <h2><a href="">ASICS GELBURST 25 LOW</a></h2>
+        <span>作者:Witness</span>
+        <p>
+          ASICS 近年持續深耕台灣籃球市場，推出多款經典兼具高人氣籃球鞋型，於 2021 年末再推出 GELBURST 25 LOW 低筒鞋款，延續 GELBURST…
+        </p>
+      </li>
+    </ul>
+    <div class="seemore"><a href="./03.html">了解更多</a></div>
+  </div>
+<!-- 訓練課程------------------------------------------ -->
+<div class="trainwrap">
+  <div class="trainimg">
+    <img src="./ballspacephoto/train.jpg" alt="">
+    <div class="trainbox">
+      <h3>訓練課程</h3>
+      <p>
+        訓練課程，年齡層涵蓋兒童至成人。<br>
+        訓練的不只是你的球技，訓練的是面對未來所需要的勇氣、自信、品行、自律、尊重以及永不放棄的決心。<br>
+      </p>
+      <div class="seemore"><a href="./04.html">了解更多</a></div>
+    </div>
   </div>
 </div>
-<footer>
-  <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
-</footer>
+<!-- ---關於我們----------------------- -->
+<div class="aboutwrap">
+  <div class="aboutimg">
+  <img src="./ballspacephoto/about.jpg" alt="">
+    <div class="aboutbox">
+      <h3>關於我們</h3>
+      <p>
+      籃球是我們的語言，是我們的連結的方式<br>
+      因為籃球而聚在一起，
+      穿上球鞋，一起打球吧!<br>
+      </p>
+    </div>
+  </div>
+</div>
+<!-- ---footer------------------------------ -->
+<div class="footerwrap">
+  <div class="footericon">
+    <img src="./ballspacephoto/footericon1.jpg" alt="">
+    <img src="./ballspacephoto/footericon2.jpg" alt="">
+    <img src="./ballspacephoto/footericon3.jpg" alt="">
+  </div>
+  <h4>2022 © BallSpace Copyright All Rights Reserved</h4>
+  <p>
+    本網站為緯育TibaMe前端設計工程師班第75期學員專題作品， 本平台僅供學習、展示之用。
+    若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。</p>
+</div>
+
+
+
+
+
+
+       
 
 </body>
 </html>

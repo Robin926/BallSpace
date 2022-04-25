@@ -94,6 +94,78 @@
         margin: 5px;
        }
        /* ---------------------------------------- */
+       .titlewrap{
+          margin-top: 2%;
+          position: relative;
+        }
+        .titlewrap img{
+          display: block;
+          margin: auto;
+        }
+        .titlewrap .newstitle{
+          color: #FFF;
+          font-size: 30px;
+          letter-spacing: 5px;
+          position: absolute;
+          left: 180px;
+          top: 10px;
+        }
+        /* ------------------------------------------------- */
+        .newstwrap img{
+          display: block;
+          margin: auto;
+          margin-top: 2%;
+        }
+        h2{
+          margin-top: 10%;
+          font-size: 30px;
+          color: aqua;
+          text-align: center;
+        }
+        
+        .conteswrap{
+          margin-top: 2%;
+          display: flex;
+          justify-content: center;
+        }
+        .contesbox{
+         margin: 10px;
+        }
+        .contesbox img{
+          display: block;
+        }
+        .content {
+          margin-top: 30px;
+        }
+        .content span{
+          color: #FFF;
+          font-size: 30px;
+          line-height: 40px;
+        }
+        .content p{
+          color:  rgb(188, 236, 238);
+          font-size: 20px;
+          line-height: 30px;
+          
+        }
+        /* ---------------------------------------------------------- */
+        .footerwrap{
+          width: 100%;
+          background-image: linear-gradient(360deg,rgb(27, 27, 27)20%,rgba(36, 67, 153, 0.11)100%);
+          width: 100%;
+          height: 120px;
+          text-align: center;
+          line-height: 30px;
+          margin-bottom: 0%;
+          margin-top: 2%;
+        }
+        .footerwrap h4{
+          color: #FFF;
+        }
+        .footerwrap p {
+          color:#FFF;
+          font-size: 10px;
+        }
 
     </style>
 </head>
@@ -104,25 +176,73 @@
     <div class="topcontainer">
       <div class="navbar">
         <div class="logo">
-          <h1><a href=""><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
+          <h1><a href="./index.html"><img src="./ballspacephoto/ballspacelogo.png" alt="logo"></a></h1>
         </div>
         <nav class="mainmenu">
            <ul>
-             <li><a href="">球場搜尋</a></li>
-             <li><a href="">最新消息</a></li>
-             <li><a href="">開箱論壇</a></li>
-             <li><a href="">訓練課程</a></li>
+            <li><a href="./01.html">球場搜尋</a></li>
+            <li><a href="./02.html">最新消息</a></li>
+            <li><a href="./03.html">開箱論壇</a></li>
+            <li><a href="./04.html">訓練課程</a></li>
            </ul>
         </nav>
         <nav class="mainicon">
            <ul>
              <li><a href=""><img src="./ballspacephoto/write icon.png" alt=""></a></li>
-             <li><a href=""><img src="./ballspacephoto/shopping icon.png" alt=""></a></li>
              <li><a href=""><img src="./ballspacephoto/people icon.png" alt=""></a></li>
            </ul>
         </nav>
       </div>
     </div>
 <!-- -------------------------------------------------------------- -->
+  <div class="titlewrap">
+    <img src="./ballspacephoto/menucard.png" alt="">
+    <div class="newstitle">
+      <h1>
+        最新消息
+      </h1>
+    </div>
+  </div>
+  <div class="newstwrap">
+    <img src="./ballspacephoto/newsbanner.png" alt="">
+  </div>
+  <h2>即將截止</h2>
+  <div class="conteswrap">
+    <div class="contesbox">
+      <a href=""><img src="./ballspacephoto/contes1.jpg" alt=""></a>
+      <div class="content">
+        <span>3x3籃球比賽</span>
+        <p>地點:桃園中正公園</p>
+        <p>日期:2022/06/11(六)至2022/06/12(日)</p>
+        <p>報名截止:2022/05/04(三)</p>
+        <p>賽程表:2022/06/01(三)發布</p>
+      </div>
+    </div>
+    <div class="contesbox">
+      <a href=""><img src="./ballspacephoto/contes2.jpg" alt=""></a>
+      <div class="content">
+        <span>3x3籃球比賽</span>
+        <p>地點:台中豐樂雕塑公園</p>
+        <p>日期:2022/06/11(六)至2022/06/12(日)</p>
+        <p>報名截止:2022/05/04(三)</p>
+        <p>賽程表:2022/06/01(三)發布</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo">
+
+  </div>
+  <div class="footerwrap">
+    <div class="footericon">
+      <img src="./ballspacephoto/footericon1.jpg" alt="">
+      <img src="./ballspacephoto/footericon2.jpg" alt="">
+      <img src="./ballspacephoto/footericon3.jpg" alt="">
+    </div>
+    <h4>2022 © BallSpace Copyright All Rights Reserved</h4>
+    <p>
+      本網站為緯育TibaMe前端設計工程師班第75期學員專題作品， 本平台僅供學習、展示之用。
+      若有侵權疑慮，您可以私訊[TibaMe-前端設計工程師養成班]，後續會由專人協助處理。</p>
+  </div>
 </body>
 </html>
